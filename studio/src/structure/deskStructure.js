@@ -66,7 +66,7 @@ export default () =>
             .title('Structure')
             .items([
               S.listItem()
-                .title('Navigation')
+                .title('Navigation - Depreciated')
                 .icon(FaSitemap)
                 .child(
                   S.editor()
@@ -75,10 +75,15 @@ export default () =>
                     .documentId('navigation')
                 ),
               S.listItem()
-                .title('Breadcrumb')
+                .title('Breadcrumb - To Be Deleted, Not Required')
                 .icon(FaSitemap)
                 .schemaType('breadcrumb')
-                .child(S.documentTypeList('breadcrumb').title('Breadcrumb'))
+                .child(S.documentTypeList('breadcrumb').title('Breadcrumb')),
+              S.listItem()
+                .title('Navigation V2')
+                .icon(FaSitemap)
+                .schemaType('navBar')
+                .child(S.documentTypeList('navBar').title('Navigation V2'))
             ])
         ),
 
@@ -133,10 +138,10 @@ export default () =>
       S.divider(),
 
       S.listItem()
-        .title('Manage Layouts')
+        .title('Manage Pages')
         .icon(MdViewCompact)
         .schemaType('landingLayout')
-        .child(S.documentTypeList('landingLayout').title('Layouts')),
+        .child(S.documentTypeList('landingLayout').title('Landing Pages')),
       S.listItem()
         .title('Manage Blocks')
         .icon(FaBuffer)
@@ -293,6 +298,7 @@ export default () =>
             'productSlider',
             'tool',
             'navigation',
+            'navBar',
             'tag',
             'tagCategory',
             'author',

@@ -93,7 +93,8 @@ export default {
       name: 'tags',
       type: 'array',
       title: 'Tags',
-      description: 'These tags will generate related articles',
+      description:
+        'First tag is used for page breadcrumb, with supporting tags to generate related articles',
       of: [
         {
           type: 'reference',

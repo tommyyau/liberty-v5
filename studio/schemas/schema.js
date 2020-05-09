@@ -35,6 +35,10 @@ import productSlider from './documents/productSlider'
 import post from './documents/post'
 import siteSettings from './documents/siteSettings'
 
+import navLink from './objects/navLink'
+import navItem from './objects/navItem'
+import navBar from './documents/navBar'
+
 // Object types
 import bodyPortableText from './objects/bodyPortableText'
 import bioPortableText from './objects/bioPortableText'
@@ -89,6 +93,10 @@ export default createSchema({
     textBlock,
     tool,
     author,
+
+    navLink,
+    navItem,
+    navBar,
 
     // Objects
     articlePortableText,
