@@ -1,6 +1,9 @@
+import {FaSliders} from 'react-icons/fa'
+
 export default {
   name: 'sliderType',
   type: 'document',
+  icon: FaSliders,
   title: 'Slider Type',
   fields: [
     {
